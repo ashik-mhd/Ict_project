@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPLOYEE JOB SATISFACTION </title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EMPLOYEE LEAVE OR STAY PREDICTION </h1>
+        <form action='/predict' method='POST'>
+            <label for="satisfaction_level">SATISFACTION LEVEL:</label><br>
+            <input type="number" id="satisfaction_level" name="satisfaction_level" value=""><br><br>
+          
+            <label for="last_evaluation">LAST EVALUATION:</label><br>
+            <input type="number" id="last_evaluation" name="last_evaluation" value=""><br><br>
+          
+            <label for="number_project">NUMBER OF PROJECTS:</label><br>
+            <input type="number" id="number_project" name="number_project" value=""><br><br>
+          
+            <label for="average_monthly_hours">AVERAGE MONTHLY HOURS:</label><br>
+            <input type="number" id="average_monthly_hours" name="average_monthly_hours" value=""><br><br>
+          
+            <label for="time_spend_company">TIME SPEND AT COMPANY (years):</label><br>
+            <input type="number" id="time_spend_company" name="time_spend_company" value=""><br><br>
+          
+            <label for="work_accident">WORK ACCIDENT (0 or 1):</label><br>
+            <input type="number" id="work_accident" name="work_accident" value=""><br><br>
+          
+            <label for="promotion_last_5years">PROMOTION IN LAST 5 YEARS (0 or 1):</label><br>
+            <input type="number" id="promotion_last_5years" name="promotion_last_5years" value=""><br><br>
+          
+            <label for="Department">DEPARTMENT:</label><br>
+            <select id="Department" name="Department">
+              <option value="1">HR</option>
+              <option value="2">TECHNICAL</option>
+              <option value="3">SUPPORT</option>
+              <option value="4">IT</option>
+              <option value="5">MANAGEMENT</option>
+              <option value="6">MARKETING</option>
+              <option value="7">PRODUCT MANAGEMENT</option>
+              <option value="8">SALES</option>
+              <option value="9">ACCOUNTING</option>
+            </select><br><br>
+          
+            <label for="salary">SALARY LEVEL:</label><br>
+            <select id="salary" name="salary">
+              <option value="1">Low</option>
+              <option value="1">Low</option>
+              <option value="2">MEDIUM</option>
+              <option value="3">HIGH</option>
+            </select><br><br>
+          
+            <input id="submit" type="submit" value="Submit">
+          </form>
+          
+          
+    </div>
+</body>
+</html>
+
+
+
